@@ -5,12 +5,12 @@ const zodiacSigns = [
 ];
 
 function getChineseZodiac(year) {
-    const zodiacIndex = (year - 4) % 12; 
+    let zodiacIndex = (year - 4) % 12; 
     return zodiacSigns[zodiacIndex];
 }
 
 function calculateZodiac() {
-    const inputYear = parseInt(prompt("Enter a year to find its Chinese Zodiac:"));
+    let inputYear = parseInt(prompt("Enter a year to find its Chinese Zodiac:"));
     
     if (isNaN(inputYear)) {
         alert("Please enter a valid year!");
