@@ -6,5 +6,4 @@ let animal = {
     }
   };
   
-  // Example usage:
   animal.speak("Hey bro!!!");
