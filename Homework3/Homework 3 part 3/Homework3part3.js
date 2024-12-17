@@ -1,4 +1,4 @@
-let accountBalance = 1000; // Example balance
+let accountBalance = 1000; 
 
 function withdrawCash(amount) {
     if (amount <= 0) {
@@ -13,7 +13,6 @@ function withdrawCash(amount) {
     return `You have withdrawn $${amount}. Remaining balance: $${accountBalance}`;
 }
 
-// Example
 console.log(withdrawCash(500));
 console.log(withdrawCash(600)); 
 console.log(withdrawCash(-50)); 

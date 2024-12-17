@@ -1,13 +1,8 @@
-let pricePerPhone = 119.95;
-
-let taxRate = 0.05;
-
+let phonePrice = 119.95;
+let taxRate = 5;
 let numberOfPhones = 30;
+let totalPriceBeforeTax = phonePrice * numberOfPhones;
+let taxAmount = (taxRate / 100) * totalPriceBeforeTax;
+let totalPriceWithTax = totalPriceBeforeTax + taxAmount;
 
-let totalPriceBeforeTax = pricePerPhone * numberOfPhones;
-
-let taxAmount = totalPriceBeforeTax * taxRate;
-
-let totalPriceAfterTax = totalPriceBeforeTax + taxAmount;
-
-console.log("Total price for 30 phones (including tax): $" + totalPriceAfterTax.toFixed(2));
+console.log("The total price for 30 phones, including tax, is: $" + totalPriceWithTax);

@@ -1,6 +1,6 @@
 
 function getTypeAndPrint(value) {
-    const type = typeof value;
+    let type = typeof value;
     console.log(`Value: ${value}, Type: ${type}`);
     return type;
 }
